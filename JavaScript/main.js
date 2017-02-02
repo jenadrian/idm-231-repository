@@ -34,16 +34,58 @@ function calZodiac(){
   console.log('age is' + age);
 
 
-
-
   whichMonth ++;
   whichDayOfMonth ++;
 
   var AstroSign;
 
-  if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
+    if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
     AstroSign = "Capricorn";
-  }
+    }
+
+    if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 12 && whichDayOfMonth <= 21)) {
+      AstroSign = "Sagittarius";
+    }
+
+    if ((whichMonth == 10 && whichDayOfMonth >= 24) || (whichMonth == 11 && whichDayOfMonth <= 21)) {
+      AstroSign = "Scorpio";
+    }
+
+    if ((whichMonth == 9 && whichDayOfMonth >= 23) || (whichMonth == 10 && whichDayOfMonth <= 23)) {
+      AstroSign = "Libra";
+    }
+
+    if ((whichMonth == 8 && whichDayOfMonth >= 23) || (whichMonth == 9 && whichDayOfMonth <= 22)) {
+      AstroSign = "Virgo";
+    }
+
+    if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
+      AstroSign = "Leo";
+    }
+
+    if ((whichMonth == 6 && whichDayOfMonth >= 22) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
+      AstroSign = "Cancer";
+    }
+
+    if ((whichMonth == 5 && whichDayOfMonth >= 21) || (whichMonth == 6 && whichDayOfMonth <= 21)) {
+      AstroSign = "Gemini";
+    }
+
+    if ((whichMonth == 4 && whichDayOfMonth >= 20) || (whichMonth == 5 && whichDayOfMonth <= 20)) {
+      AstroSign = "Taurus";
+    }
+
+    if ((whichMonth == 3 && whichDayOfMonth >= 21) || (whichMonth == 4 && whichDayOfMonth <= 19)) {
+      AstroSign = "Aries";
+    }
+
+    if ((whichMonth == 2 && whichDayOfMonth >= 19) || (whichMonth == 4 && whichDayOfMonth <= 20)) {
+      AstroSign = "Pisces";
+    }
+
+    if ((whichMonth == 1 && whichDayOfMonth >= 20) || (whichMonth == 2 && whichDayOfMonth <= 18)) {
+      AstroSign = "Aquarius";
+    }
 
   var outputArea = document.getElementById('displayMsg');
 
