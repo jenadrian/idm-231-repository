@@ -1,0 +1,47 @@
+### OSX ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Media ###
+*.mp3
+*.mp4
+*.ogg
+*.ogv
+*.webm
+*.ai
+*.psd
+*.jpg
+*.png
+*.gif
+*.xd
+graphics
+
+### Documents ###
+*.pdf
+*.doc
+*.docx
+Contact GitHub API Training Shop Blog About
