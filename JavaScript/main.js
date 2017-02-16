@@ -1,16 +1,10 @@
 //declare global variables outside of functions here
-/*function calZodiac(){
-  var outputArea = document.getElementById('displayMsg');
-  outputArea.innerHTML = 'calZodiac called';
-  return false;
-  //return false to prevent form from resetting
-}
-*/
 var firstName;
 var lastName;
 var birthDay0bj;
 var age
 var currentDate
+
 
 var WeekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
@@ -21,18 +15,30 @@ function calZodiac(){
   birthDay0bj = new Date(document.getElementById('bday').value);
   currentDate = new Date();
 
-  var whichDayNdx = birthDay0bj.getDay();
+  var whichDayNdx = birthDay0bj.getUTCDay();
   console.log('whichDayNdx is'+ whichDayNdx);
 
-  var whichMonth = birthDay0bj.getMonth();
+  var whichMonth = birthDay0bj.getUTCMonth();
   console.log('whichMonth is' + whichMonth);
 
-  var whichDayOfMonth = birthDay0bj.getDate();
+  var whichDayOfMonth = birthDay0bj.getUTCDate();
   console.log('whichDayOfMonth is' + whichDayOfMonth);
 
-  var age = currentDate.getFullYear() - birthDay0bj.getFullYear();
-  console.log('age is' + age);
 
+   var age = calculate_age(birthDay0bj);
+
+function calculate_age(birthday){
+    var utcDate = new Date();
+     var ageInMilliseconds = utcDate.getTime() - birthday.getTime();
+     if(!isNaN(ageInMilliseconds)){
+       var age = ageInMilliseconds/1000/60/60/24/365;
+       return Math.floor(age);
+     }else{
+       alert("invalid age");
+       return;
+     }
+
+ }
 
   whichMonth ++;
   whichDayOfMonth ++;
@@ -91,6 +97,15 @@ function calZodiac(){
 
   outputArea.innerHTML = 'Hello ' + firstName +' '+ lastName +',' + ' you were born on a ' + WeekDays[whichDayNdx] + '.' + ' Your zodiac sign is ' + AstroSign + ' and you are' +' ' + age + ' years old.';
 
-  return false;
+return false;
   //return false prevents form from resetting
 }
+
+//  outputArea.innerHTML += '<p>CANDLES: ';
+//   for (lp = 0; lp < age; lp++) {
+//     console.log(lp);
+//     outputArea.innerHTML +='i ';
+//   }
+//
+// outputArea.innerHTML += '</p>';
+// outputArea.innerHTML = msg;

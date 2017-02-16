@@ -7,32 +7,36 @@
 -->
 
 <head>
-  <title>What's Your Zodiac Sign?</title>
-<link rel="stylesheet" type="text/css" href="../CSS/main.css" />
+  <title>What's Your Zodiaz Sign?</title>
+<link rel="stylesheet" type="text/css" href="CSS/main.css" />
+
 </head>
 
-<body>
-  <div id="wrapper">
-    <h1>What's Your Zodiac Sign?</h1>
-    <form onsubmit="event.preventDefault();return calZodiac();">
-      <p>
-        <input id="fname" name="fname" type="text" placeholder="First Name" required>
-      </p>
-      <p>
-        <input id="lname" name="lname" type="text" placeholder="Last Name" required>
-      </p>
-      <p>
-        <input id="bday" name="bday" type="date" required>
-      </p>
-      <p>
-        <input type="submit">
-      </p>
-    </form>
-    <div id="displayMsg">
+  <body>
+    <div class="zodiac-wrapper">
+      <div class="form-wrapper">
+        <h1>What's Your Zodiac Sign?</h1>
+            <form onsubmit="event.preventDefault();return calZodiac();">
+              <p>
+                <input id="fname" name="fname" type="text" placeholder="First Name" required>
+              </p>
+              <p>
+                <input id="lname" name="lname" type="text" placeholder="Last Name" required>
+              </p>
+              <p>
+                <input id="bday" name="bday" type="date" required>
+              </p>
+              <p>
+                <input type="submit">
+              </p>
+            </form>
+          </div>
+          <div id="displayMsg">
+          </div>
+        <script src="JavaScript/main.js"></script>
 
-    </div>
-  </div>
-  <script src="JavaScript/main.js"></script>
-</body>
-
+        <div class="icons">
+        </div>
+      </div>
+  </body>
 </html>
