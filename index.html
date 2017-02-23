@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html>
-
-<!--
-  NOTE: Modern browsers support HTML5 form auto checks on DATE input.
-  In Chrome browser, try entering an invaild date i.e. Feb 31, any year.
--->
-
-<head>
-  <title>What's Your Zodiaz Sign?</title>
-<link rel="stylesheet" type="text/css" href="CSS/main.css" />
-
-</head>
-
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Hind|Work+Sans" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/master.css" rel="stylesheet">
+    <title>What's Your Starbucks Secret Menu Order?</title>
+  </head>
   <body>
-    <div class="zodiac-wrapper">
-      <div class="form-wrapper">
-        <h1>What's Your Zodiac Sign?</h1>
-            <form onsubmit="event.preventDefault();return calZodiac();">
-              <p>
-                <input id="fname" name="fname" type="text" placeholder="First Name" required>
-              </p>
-              <p>
-                <input id="lname" name="lname" type="text" placeholder="Last Name" required>
-              </p>
-              <p>
-                <input id="bday" name="bday" type="date" required>
-              </p>
-              <p>
-                <input type="submit">
-              </p>
-            </form>
-          </div>
-          <div id="displayMsg">
-          </div>
-        <script src="JavaScript/main.js"></script>
-
-        <div class="icons">
+    <h1>STARBUCKS COFFEE</h1>
+    <photo id="sbuxSiren">
+      <img src="assets/sbux-png.gif">
+    </photo>
+    <div class="main-wrapper">
+      <h3>Order Your Secret Menu Drink Now!</h3>
+      <form onsubmit="event.preventDefault();return calZodiac();">
+        <div class="form-div">
+          <p>
+            <input id="fname" name="fname" type="text" placeholder="First Name" required>
+          </p>
+          <p>
+            <input id="lname" name="lname" type="text" placeholder="Last Name" required>
+          </p>
+          <p>
+            <input id="bday" name="bday" type="date" required>
+          </p>
+          <p>
+            <input type="submit">
+          </p>
         </div>
+      </form>
+      <div id="displayMsg"></div>
+      <div id="coffeeCup" style="display:none">
+        <img src="assets/coffee-cup.gif"/>
       </div>
+      <div class="secret-menu-div">
+        <ul class ="secret-menu">
+          <h2>The Secret Menu: <br class="menu-break"> Esspresso, Coffee, &amp; More</h2>
+          <li onclick="showMessage(0)">"Actually, It's a Tall"</li>
+          <li onclick="showMessage(10)">Ariana Grande Frappucino</li>
+          <li onclick="showMessage(2)">I Hate Coffee</li>
+          <li onclick="showMessage(6)">Kinda Sorta on a Diet Vanilla Latte</li>
+          <li onclick="showMessage(8)">Running 5 Minutes Late(r) Latte</li>
+          <li onclick="showMessage(3)">Smokachino</li>
+          <li onclick="showMessage(4)">SO Over It Special</li>
+          <li onclick="showMessage(7)">Teavanamama</li>
+          <li onclick="showMessage(5)">Two Buck Chuck Brewed Coffee</li>
+          <li onclick="showMessage(9)">Uninstagrammable</li>
+          <li onclick="showMessage(11)">Vegan [When it's Trending]</li>
+          <li onclick="showMessage(1)">Westphal</li>
+        </ul>
+      </div>
+    </div>
+  <footer>
+  </footer>
+<script src="js/main.js"></script>
+
   </body>
 </html>

@@ -1,0 +1,151 @@
+*{box-sizing: border-box;}
+body{
+  color:white;
+  background-color:white;
+  font-family: 'Hind', sans-serif;
+  /*font-family: 'PT Sans Narrow', sans-serif;*/
+  font-size: 100%;
+}
+h1{
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-family:'Work Sans', sans-serif;
+  font-size: 200%
+}
+#sbuxSiren{
+  display: flex;
+  justify-content: center;
+  /*width: 5rem;
+  height: 5rem;*/
+  margin:auto;
+  padding:0;
+}
+#displayMsg{
+  color:black;
+  text-align: center;
+  padding: 2rem;
+}
+#coffeeCup{
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  align-items:center;
+  margin:auto;
+  padding: 0;
+}
+img{
+  display:block;
+  justify-content: center;
+  margin:auto;
+  padding: 0;
+}
+h2{
+  /*display: flex;
+  justify-content:center;*/
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+  font-size: 150%;
+  font-weight:lighter;
+}
+h3{
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-family:'Work Sans', sans-serif;
+  font-size: 150%
+}
+li:hover{
+cursor: pointer;
+}
+.secret-menu-div{
+display: flex;
+flex-wrap: nowrap;
+align-content: center;
+align-items: center;
+margin:auto;
+padding; 0;
+width: 50%;
+height: auto;
+border-style: solid;
+border-color:black;
+border-width: 1rem;
+background-color: #363739;
+}
+
+.secret-menu{
+  display: block;
+  list-style: none;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: auto;
+  padding: 1rem 2rem;
+
+}
+
+li{
+  line-height:2rem;
+}
+
+@media screen and (min-width:70rem){
+  .menu-break{
+    display:none;
+  }
+
+}
+.form-div{
+  display:block;
+  flex-flow: column;
+  flex-wrap:nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2rem;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+form{
+  display: block;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  width: 100%
+  margin:auto;
+}
+input {
+    width: 50%;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+input[type=text]:focus {
+    border: 3px solid #363739;
+}
+
+input[type=date]:focus{
+border: 3px solid #363739;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: green;
+    border: none;
+    border-radius: .625rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer{
+  margin-top:2rem;
+}
+
+/*.form-div{
+  width: 14rem;
+  height:24rem;
+  border-style:solid;
+  border-radius: 1.25rem;
+  border-width:.00625rem;
+  border-color:grey;
+}*/
