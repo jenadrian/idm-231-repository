@@ -8,20 +8,27 @@
     <title>What's Your Starbucks Secret Menu Order?</title>
   </head>
   <body>
+    <div class="h1-wrapper">
     <h1>STARBUCKS COFFEE</h1>
+  </div>
     <photo id="sbuxSiren">
       <img src="assets/sbux-png.gif">
     </photo>
     <div class="main-wrapper">
+      <div class="h3-wrapper">
       <h3>Order Your Secret Menu Drink Now!</h3>
+    </div>  
       <form onsubmit="event.preventDefault();return calZodiac();">
         <div class="form-div">
+          <p class="form-text">Your First Name</p>
           <p>
             <input id="fname" name="fname" type="text" placeholder="First Name" required>
           </p>
+          <p class="form-text">Your Last Name</p>
           <p>
             <input id="lname" name="lname" type="text" placeholder="Last Name" required>
           </p>
+          <p class="form-text">Your Birthday (Receive a Free Drink on Your Birthday!)</p>
           <p>
             <input id="bday" name="bday" type="date" required>
           </p>

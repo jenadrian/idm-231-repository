@@ -6,8 +6,10 @@ body{
   /*font-family: 'PT Sans Narrow', sans-serif;*/
   font-size: 100%;
 }
+.h1-wrapper{
+  background-color: green;
+}
 h1{
-  color: black;
   display: flex;
   justify-content: center;
   font-family:'Work Sans', sans-serif;
@@ -22,6 +24,8 @@ h1{
   padding:0;
 }
 #displayMsg{
+  display: flex;
+  flex-wrap: wrap;
   color:black;
   text-align: center;
   padding: 2rem;
@@ -40,20 +44,23 @@ img{
   margin:auto;
   padding: 0;
 }
+.
 h2{
-  /*display: flex;
-  justify-content:center;*/
-  text-align: center;
+  display: flex;
+  justify-content:center;
   font-family: 'Hind', sans-serif;
   font-size: 150%;
   font-weight:lighter;
 }
+
 h3{
   color: black;
   display: flex;
+  flex-wrap: no-wrap;
   justify-content: center;
   font-family:'Work Sans', sans-serif;
-  font-size: 150%
+  font-size: 150%;
+  margin: none;
 }
 li:hover{
 cursor: pointer;
@@ -71,15 +78,20 @@ border-style: solid;
 border-color:black;
 border-width: 1rem;
 background-color: #363739;
+min-width: 20.625rem;
 }
 
 .secret-menu{
   display: block;
   list-style: none;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
   padding: 1rem 2rem;
+  width: 75%;
+  height: auto;
+  min-width: 20.625rem;
+
 
 }
 
@@ -105,14 +117,29 @@ li{
   width: 100%;
   height: auto;
   text-align: center;
+  max-width: 31.25rem;
 }
 form{
   display: block;
   align-items: center;
   align-content: center;
   justify-content: space-around;
-  width: 100%
+  width: 100%;
+  margin: auto;
+  max-width: 31.25rem;
+}
+form p.form-text{
+  display: block;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-around;
+  color: black;
+  width: 75%;
   margin:auto;
+  padding: 0;
+  max-width: 31.25rem;
+
+
 }
 input {
     width: 50%;
