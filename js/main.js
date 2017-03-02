@@ -87,8 +87,8 @@ function showMessage(index, name) {
 }
 
 function calZodiac(){
-  var coffeeCup = document.getElementById('coffeeCup');
-  coffeeCup.style.display = 'block';
+  // var coffeeCup = document.getElementById('coffeeCup');
+  // coffeeCup.style.display = 'block';
 
   //name and date error checking not needed when using chrome
   firstName = document.getElementById('fname').value;

@@ -7,28 +7,34 @@
     <link href="css/master.css" rel="stylesheet">
     <title>What's Your Starbucks Secret Menu Order?</title>
   </head>
-  <body>
+  <header>
     <div class="h1-wrapper">
     <h1>STARBUCKS COFFEE</h1>
   </div>
+  </header>
+  <body>
     <photo id="sbuxSiren">
-      <img src="assets/sbux-png.gif">
+      <img src="assets/sbux-pngsmall.gif">
     </photo>
-    <div class="main-wrapper">
       <div class="h3-wrapper">
       <h3>Order Your Secret Menu Drink Now!</h3>
     </div>
+    <div id="how-to">
+      Welcome to the elusive Starbucks Secret Menu. Browse the selection of secret menu items below by clicking on each beverage listed.
+      Once you've decided what you'd like to order fill out the form and we'll build and customize your Secret Menu drink order.
+      Be sure to enter your birthday when you order for a free Secret Menu drink on your birthday every year!
+    </div>
       <form onsubmit="event.preventDefault();return calZodiac();">
         <div class="form-div">
-          <p class="form-text">Your First Name</p>
+          <p class="form-text"><b>Your First Name</b></p>
           <p>
             <input id="fname" name="fname" type="text" placeholder="First Name" required>
           </p>
-          <p class="form-text">Your Last Name</p>
+          <p class="form-text"><b>Your Last Name</b></p>
           <p>
             <input id="lname" name="lname" type="text" placeholder="Last Name" required>
           </p>
-          <p class="form-text">Your Birthday (Receive a Free Drink on Your Birthday!)</p>
+          <p class="form-text"><b>Your Birthday</b></p>
           <p>
             <input id="bday" name="bday" type="date" required>
           </p>
@@ -37,10 +43,9 @@
           </p>
         </div>
       </form>
-      <div id="displayMsg"></div>
-      <div id="coffeeCup" style="display:none">
+      <!-- <div id="coffeeCup" style="display:none">
         <img src="assets/coffee-cup.gif"/>
-      </div>
+      </div> -->
       <div class="secret-menu-div">
         <ul class ="secret-menu">
           <h2>The Secret Menu: <br class="menu-break"> Esspresso, Coffee, &amp; More</h2>
@@ -58,9 +63,7 @@
           <li onclick="showMessage(1)">Westphal</li>
         </ul>
       </div>
-    </div>
-  <footer>
-  </footer>
+    <div id="displayMsg"></div>
 <script src="js/main.js"></script>
 
   </body>

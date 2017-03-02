@@ -7,20 +7,21 @@ body{
   font-size: 100%;
 }
 .h1-wrapper{
-  background-color: green;
+  background-color: #007042;
 }
 h1{
   display: flex;
   justify-content: center;
   font-family:'Work Sans', sans-serif;
-  font-size: 200%
+  font-size: 200%;
+  margin-top: 0;
 }
 #sbuxSiren{
   display: flex;
   justify-content: center;
   /*width: 5rem;
   height: 5rem;*/
-  margin:auto;
+  margin-top: .5rem;
   padding:0;
 }
 #displayMsg{
@@ -29,14 +30,15 @@ h1{
   color:black;
   text-align: center;
   padding: 2rem;
+  line-height: 1.5;
+  color:#2E2F30;
 }
-#coffeeCup{
-  display: flex;
-  justify-content: center;
-  align-content:center;
-  align-items:center;
-  margin:auto;
-  padding: 0;
+#how-to{
+  color:black;
+  text-align:center;
+  margin-bottom:2rem;
+  color: #2E2F30;
+  line-height: 1.5;
 }
 img{
   display:block;
@@ -63,6 +65,8 @@ h3{
   margin: none;
 }
 li:hover{
+text-decoration: underline;
+color: #A4AAAD;
 cursor: pointer;
 }
 .secret-menu-div{
@@ -70,10 +74,12 @@ display: flex;
 flex-wrap: nowrap;
 align-content: center;
 align-items: center;
+float: left;
 margin:auto;
 padding; 0;
 width: 50%;
-height: auto;
+height:25%;
+/*height: auto;*/
 border-style: solid;
 border-color:black;
 border-width: 1rem;
@@ -82,14 +88,16 @@ min-width: 20.625rem;
 }
 
 .secret-menu{
+  font-family:'Work Sans', sans-serif;
   display: block;
   list-style: none;
   align-items: flex-start;
   justify-content: space-between;
   margin: auto;
   padding: 1rem 2rem;
-  width: 75%;
-  height: auto;
+  width: 50%;
+  height: 25%;
+  /*height: auto;*/
   min-width: 20.625rem;
 
 
@@ -105,15 +113,34 @@ li{
   }
 
 }
+@media screen and (max-width:40rem){
+  .form-div{
+    width:100%;
+    float: center !important;
+    margin-right: 25%;
+  }
+  form{
+    width:100%;
+    float: center !important;
+    margin-right: 25%;
+  }
+  .secret-menu-div{
+    width: 100%;
+  }
+  .secret-menu{
+    width:100%;
+  }
+}
 .form-div{
   display:block;
+  float: right;
   flex-flow: column;
   flex-wrap:nowrap;
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  padding: 2rem;
+  margin: 0;
+  /*padding: 2rem;*/
   width: 100%;
   height: auto;
   text-align: center;
@@ -121,29 +148,33 @@ li{
 }
 form{
   display: block;
+  float: right;
   align-items: center;
   align-content: center;
+  text-align: center;
   justify-content: space-around;
-  width: 100%;
-  margin: auto;
+  width: 50%;
+  margin-top:5%;
   max-width: 31.25rem;
 }
-form p.form-text{
+p.form-text{
   display: block;
   align-items: flex-start;
   align-content: flex-start;
   justify-content: space-around;
+  text-align: center;
   color: black;
-  width: 75%;
-  margin:auto;
+  width: 50%;
+  margin-left:10%;
   padding: 0;
-  max-width: 31.25rem;
+  /*max-width: 31.25rem;*/
 
 
 }
 input {
     width: 50%;
     font-family: "Open Sans", sans-serif;
+    margin:0;
 
 }
 
@@ -156,7 +187,7 @@ border: 3px solid #363739;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
-    background-color: green;
+    background-color: #007042;
     border: none;
     border-radius: .625rem;
     color: white;
