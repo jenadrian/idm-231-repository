@@ -31,13 +31,13 @@ h1{
   text-align: center;
   padding: 2rem;
   line-height: 1.5;
-  color:#2E2F30;
+  color:#1F2021;
 }
 #how-to{
   color:black;
   text-align:center;
   margin-bottom:2rem;
-  color: #2E2F30;
+  color: #1F2021;
   line-height: 1.5;
 }
 img{
@@ -56,7 +56,7 @@ h2{
 }
 
 h3{
-  color: black;
+  color: #1F2021;
   display: flex;
   flex-wrap: no-wrap;
   justify-content: center;
@@ -175,15 +175,16 @@ input {
     width: 50%;
     font-family: "Open Sans", sans-serif;
     margin:0;
+    border: 1px solid #007042;
 
 }
 
 input[type=text]:focus {
-    border: 3px solid #363739;
+    border: 3px solid #00C977;
 }
 
 input[type=date]:focus{
-border: 3px solid #363739;
+border: 3px solid #00C977;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
