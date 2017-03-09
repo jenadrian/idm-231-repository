@@ -78,8 +78,8 @@ h1{
 #displayMsg{
   display: none;
   float: right !important;
-  margin: 20% 45% 0 0;
-  color:black;
+  margin: 20% 50% 0 0;
+  color:white !important;
   text-align: center;
   padding: 2rem;
   line-height: 1.5;
