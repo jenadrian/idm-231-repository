@@ -54,11 +54,16 @@ body{
 }
 
 @media screen and (max-width:799px) {
+  @font-face {
+      font-family: chalkBoardFont;
+      src: url(../assets/kg_second_chances/KGSecondChancesSolid.ttf)
+  }
   #iPhoneUI{
     padding-left:22% !important;
     padding-right:22% !important;
   }
   #secret-menu-div{
+    color:white;
     margin-left:22% !important;
     margin-right:22% !important;
   }
