@@ -9,7 +9,7 @@ var WeekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturda
 
 var messages = [
   {
-    name: 'a \'Actually, It\'s a Tall\'',
+    name: 'an \'Actually, It\'s a Tall\'',
     description: 'Sorry, it doesn\'t matter what you ordered if you asked for a small instead of a tall. Small isn\'t a size at Starbucks so it looks like you don\'t get the coffee you just paid $6 for. Oh well!'
   },{
     name: 'a Westphal',
@@ -85,6 +85,14 @@ function showMessage(index, name) {
   outputString += 'you ordered ' + ' '+ message.name + '. ' + message.description;
   outputArea.innerHTML = outputString;
 }
+  function hideMenuDiv(){
+  document.getElementById('secret-menu-div').style.display = "none";
+}
+
+  function showDisplayMsg(){
+    document.getElementById('displayMsg','receiptHeader').style.display = "block";
+  }
+
 
 function calZodiac(){
   // var coffeeCup = document.getElementById('coffeeCup');
@@ -120,7 +128,9 @@ function calculate_age(birthday){
      }
 
  }
-
+function resetForm(){
+  location.reload();
+}
   whichMonth ++;
   whichDayOfMonth ++;
   showMessage(getMessageIndex(whichMonth, whichDayOfMonth), firstName);
