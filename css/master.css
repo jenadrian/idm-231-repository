@@ -52,6 +52,17 @@ body{
     float: left;
   }
 }
+
+@media screen and (max-width:799px) {
+  #iPhoneUI{
+    padding-left:22% !important;
+    padding-right:22% !important;
+  }
+  #secret-menu-div{
+    margin-left:22% !important;
+    margin-right:22% !important;
+  }
+}
 #iPhoneUI{
   padding-top: 3%;
   padding-left: 3%;
