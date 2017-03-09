@@ -86,7 +86,6 @@ function showMessage(index, name) {
   outputArea.innerHTML = outputString;
 }
 
-
 function hideOrderDialogue(){
   document.getElementById('orderDialogue').style.display = "none";
 }
@@ -146,8 +145,6 @@ function calculate_age(birthday){
   whichMonth ++;
   whichDayOfMonth ++;
   showMessage(getMessageIndex(whichMonth, whichDayOfMonth), firstName);
-
-  document.getElementById('orderAgain').addEventListener("click", resetForm);
 
   return false;
 }
