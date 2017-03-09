@@ -64,28 +64,39 @@ h1{
   display: flex;
   justify-content: center;
   font-family:'Work Sans', sans-serif;
-  font-size: 200%;
   margin-top: 0;
+
 }
 #sbuxSiren{
   display: flex;
-  justify-content: center;
-  /*width: 5rem;
-  height: 5rem;*/
-  margin-top: .5rem;
+  width: 5rem;
+  height: 5rem;
+  margin-left: .25rem;
   padding:0;
+}
+#h2-wrapper{
+  display:flex;
+  align-content: flex-start;
+  text-align:left;
+}
+#thankYou{
+  display:none;
+}
+#receiptHeader{
+  display:none;
+  color: #1F2021;
+  font-family: monospace;
 }
 #displayMsg{
   display: none;
-  float: right !important;
-  margin: 20% 50% 0 0;
-  color:white !important;
+  /*float: right !important;*/
+  /*margin: 20% 50% 0 0;*/
   text-align: center;
   padding: 2rem;
   line-height: 1.5;
   color:#1F2021;
-  width:50%;
-  height: 80%;
+  /*width:50%;
+  height: 80%;*/
   /*background-color: white;*/
 }
 #how-to{
@@ -106,11 +117,12 @@ img{
 h2{
   color: #1F2021;
   display: flex;
-  flex-wrap: no-wrap;
-  justify-content: center;
+  flex-wrap: wrap;
+  /*justify-content:;*/
   font-family:'Work Sans', sans-serif;
   font-size: 150%;
-  margin: none;
+  margin: 2rem 0 0 2rem;
+  /*margin-left:2rem;*/
 }
 
 h3{
@@ -185,7 +197,7 @@ input[type=date]:focus{
 border: 3px solid #00C977;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
+input[type=button], input[type=submit], input[type=reset] #submit {
     background-color: #007042;
     border: none;
     border-radius: .625rem;
@@ -198,6 +210,20 @@ input[type=button], input[type=submit], input[type=reset] {
 input[type=submit]:hover{
   background-color:#003620;
 }
+
+#orderAgain{
+  background-color: #007042;
+  border: none;
+  border-radius: .625rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  width: 30%;
+}
+#orderAgain:hover{
+   background-color:#003620;
+  }
+
 footer{
   margin-top:2rem;
 }

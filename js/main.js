@@ -85,14 +85,29 @@ function showMessage(index, name) {
   outputString += 'you ordered ' + ' '+ message.name + '. ' + message.description;
   outputArea.innerHTML = outputString;
 }
-  function hideMenuDiv(){
-  document.getElementById('secret-menu-div').style.display = "none";
+
+
+function hideOrderDialogue(){
+  document.getElementById('orderDialogue').style.display = "none";
+}
+function showThankYou(){
+  document.getElementById('thankYou').style.display = "block";
+}
+function hideForm(){
+  document.getElementById('form-wrapper').style.display = "none";
 }
 
-  function showDisplayMsg(){
-    document.getElementById('displayMsg','receiptHeader').style.display = "block";
-  }
+function showReceiptHeader(){
+  document.getElementById('receiptHeader').style.display = "block";
+}
 
+function showDisplayMsg(){
+    document.getElementById('displayMsg','receiptHeader').style.display = "block";
+}
+
+function resetForm()  {
+  window.location.reload();
+}
 
 function calZodiac(){
   // var coffeeCup = document.getElementById('coffeeCup');
@@ -128,12 +143,11 @@ function calculate_age(birthday){
      }
 
  }
-function resetForm(){
-  location.reload();
-}
   whichMonth ++;
   whichDayOfMonth ++;
   showMessage(getMessageIndex(whichMonth, whichDayOfMonth), firstName);
+
+  document.getElementById('orderAgain').addEventListener("click", resetForm);
 
   return false;
 }

@@ -8,11 +8,11 @@
     <link href="css/devices.min.css" rel="stylesheet">
     <title>What's Your Starbucks Secret Menu Order?</title>
   </head>
-  <header>
-    <!-- <div class="h1-wrapper">
+  <!-- <header>
+    <div class="h1-wrapper">
     <h1>STARBUCKS COFFEE</h1>
-  </div> -->
-  </header>
+  </div>
+  </header> -->
   <body>
     <!-- <photo id="sbuxSiren">
       <img src="assets/sbux-pngsmall.gif">
@@ -41,17 +41,18 @@
           <div class="h1-wrapper">
           <h1>STARBUCKS COFFEE</h1>
         </div>
-        <div class="h3-wrapper">
-        <h2>Order Your Secret Menu Drink Now!</h2>
-      </div>
+        <div id="h2-wrapper">
           <photo id="sbuxSiren">
             <img src="assets/sbux-pngsmall.gif">
           </photo>
+        <h2 id="orderDialogue">Order Your Secret Menu Drink Now!</h2>
+        <h2 id="thankYou">Thanks for your order!</h2>
+      </div>
+        <div id="form-wrapper">
         <div id="how-to">
           <p> Welcome to the Starbucks Secret Menu. Browse the selection of secret menu items by clicking on each beverage.
           Fill out the form below to place your order and we'll build and customize your Secret Menu drink order.</p>
         </div>
-          <div class="form-wrapper">
           <form onsubmit="event.preventDefault();return calZodiac();">
           <p class="form-text"><b>Your First Name</b></p>
           <p>
@@ -66,10 +67,16 @@
             <input id="bday" name="bday" type="date" required>
           </p>
           <p>
-            <input id="submit" onclick="hideMenuDiv(), showDisplayMsg()" type="submit">
+            <input id="submit" onclick="hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()" type="submit">
           </p>
         </form>
       </div>
+        <div id="receiptHeader">
+        <p>STARBUCKS Store #19104<br>3141 Chestnut Street<br>Philadelphia, PA (215) 895-2000</p><hr>
+          <div id="displayMsg">
+          </div>
+          <button id="orderAgain" onclick="resetForm()" type="submit">Order Again</button>
+          </div>
     </div>
   <div class="home"></div>
   <div class="bottom-bar"></div>
@@ -79,29 +86,21 @@
     <div id="secret-menu-div">
       <ul class ="secret-menu">
         <h3>The Secret Menu: <br class="menu-break"> Esspresso, Coffee, &amp; More</h3>
-        <li onclick="showMessage(0), hideMenuDiv(), showDisplayMsg()">"Actually, It's a Tall"</li>
-        <li onclick="showMessage(10), hideMenuDiv(), showDisplayMsg()">Ariana Grande Mocha Latte</li>
-        <li onclick="showMessage(2), hideMenuDiv(), showDisplayMsg()">I Hate Coffee</li>
-        <li onclick="showMessage(6), hideMenuDiv(), showDisplayMsg()">Kinda Sorta on a Diet Vanilla Latte</li>
-        <li onclick="showMessage(8), hideMenuDiv(), showDisplayMsg()">Running 5 Minutes Late(r) Latte</li>
-        <li onclick="showMessage(3), hideMenuDiv(), showDisplayMsg()">Smokachino</li>
-        <li onclick="showMessage(4), hideMenuDiv(), showDisplayMsg()">SO Over It Special</li>
-        <li onclick="showMessage(7), hideMenuDiv(), showDisplayMsg()">Teavanamama</li>
-        <li onclick="showMessage(5), hideMenuDiv(), showDisplayMsg()">Two Buck Chuck Brewed Coffee</li>
-        <li onclick="showMessage(9), hideMenuDiv(), showDisplayMsg()">Uninstagrammable</li>
-        <li onclick="showMessage(11), hideMenuDiv(), showDisplayMsg()">Vegan [When it's Trending]</li>
-        <li onclick="showMessage(1), hideMenuDiv(), showDisplayMsg()">Westphal</li>
+        <li onclick="showMessage(0), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">"Actually, It's a Tall"</li>
+        <li onclick="showMessage(10), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Ariana Grande Mocha Latte</li>
+        <li onclick="showMessage(2), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">I Hate Coffee</li>
+        <li onclick="showMessage(6), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Kinda Sorta on a Diet Vanilla Latte</li>
+        <li onclick="showMessage(8), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Running 5 Minutes Late(r) Latte</li>
+        <li onclick="showMessage(3), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Smokachino</li>
+        <li onclick="showMessage(4), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">SO Over It Special</li>
+        <li onclick="showMessage(7), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Teavanamama</li>
+        <li onclick="showMessage(5), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Two Buck Chuck Brewed Coffee</li>
+        <li onclick="showMessage(9), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Uninstagrammable</li>
+        <li onclick="showMessage(11), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Vegan [When it's Trending]</li>
+        <li onclick="showMessage(1), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Westphal</li>
       </ul>
     </div>
   </div>
-  <div class="col-5">
-      <div id="displayMsg">
-        <div id="receiptHeader">
-        <p>STARBUCKS Store #19104<br>3141 Chestnut Street<br>Philadelphia, PA (215) 895-2000</p><hr>
-        <button onclick="resetForm">Order Again</button>
-      </div>
-      </div>
-    </div>
   </div>
 <script src="js/main.js"></script>
 </body>
