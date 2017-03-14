@@ -46,7 +46,7 @@
             <input id="bday" name="bday" type="date" required>
           </p>
           <p>
-            <input id="submit" onclick="hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()" type="submit" value="Place Your Order">
+            <input id="submit" onclick="updateUi()" type="submit" value="Place Your Order">
           </p>
         </form>
       </div>
@@ -68,18 +68,18 @@
       <ul class ="secret-menu">
         <h3>The Secret Menu: <br class="menu-break"> Esspresso, Coffee, &amp; More</h3>
         <!-- <li onclick="click(0)">"Actually, It's a Tall"</li> -->
-        <li onclick="showMessage(0), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">"Actually, It's a Tall"</li>
-        <li onclick="showMessage(10), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Ariana Grande Mocha Latte</li>
-        <li onclick="showMessage(2), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">I Hate Coffee</li>
-        <li onclick="showMessage(6), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Kinda Sorta on a Diet Vanilla Latte</li>
-        <li onclick="showMessage(8), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Running 5 Minutes Late(r) Latte</li>
-        <li onclick="showMessage(3), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Smokachino</li>
-        <li onclick="showMessage(4), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">SO Over It Special</li>
-        <li onclick="showMessage(7), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Teavanamama</li>
-        <li onclick="showMessage(5), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Two Buck Chuck Brewed Coffee</li>
-        <li onclick="showMessage(9), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Uninstagrammable</li>
-        <li onclick="showMessage(11), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Vegan [When it's Trending]</li>
-        <li onclick="showMessage(1), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Westphal</li>
+        <li onclick="updateUiMessage(0)">"Actually, It's a Tall"</li>
+        <li onclick="updateUiMessage(10)">Ariana Grande Mocha Latte</li>
+        <li onclick="updateUiMessage(2)">I Hate Coffee</li>
+        <li onclick="updateUiMessage(6)">Kinda Sorta on a Diet Vanilla Latte</li>
+        <li onclick="updateUiMessage(8)">Running 5 Minutes Late(r) Latte</li>
+        <li onclick="updateUiMessage(3)">Smokachino</li>
+        <li onclick="updateUiMessage(4)">SO Over It Special</li>
+        <li onclick="updateUiMessage(7)">Teavanamama</li>
+        <li onclick="updateUiMessage(5)">Two Buck Chuck Brewed Coffee</li>
+        <li onclick="updateUiMessage(9)">Uninstagrammable</li>
+        <li onclick="updateUiMessage(11)">Vegan [When it's Trending]</li>
+        <li onclick="updateUiMessage(1)">Westphal</li>
       </ul>
     </div>
     <!-- <script type="text/javascript">

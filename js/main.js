@@ -86,7 +86,6 @@ function showMessage(index, name) {
   outputArea.innerHTML = outputString;
 }
 
-
 function hideOrderDialogue(){
   document.getElementById('orderDialogue').style.display = "none";
 }
@@ -107,6 +106,19 @@ function showDisplayMsg(){
 
 function resetForm()  {
   window.location.reload();
+}
+
+function updateUi() {
+  hideOrderDialogue();
+  showThankYou()
+  hideForm();
+  showReceiptHeader();
+  showDisplayMsg();
+}
+
+function updateUiMessage(index) {
+  showMessage(index);
+  updateUi();
 }
 
 function calZodiac(){
