@@ -39,7 +39,7 @@ var messages = [
     name: 'an UnInstagrammable',
     description: 'This secret menu item is a favorite of every Barista! Order it if you want your name butchered, ruining any chances of your cup of overpriced coffee clogging up your followers\' feeds.'
   },{
-    name: 'a Ariana Grande Mocha Latte',
+    name: 'an Ariana Grande Mocha Latte',
     description: 'Homegirl Ariana is the most extra of the extras and if you go to Starbucks you\'re probably a bit extra too. Enjoy extra mocha and caramel syrup along with 5 pumps of every flavored simple syrup we have in stock. At least half of your cup will consist of whipped cream.'
   },{
     name: 'a Vegan[When it\'s Trending]',
@@ -85,6 +85,7 @@ function showMessage(index, name) {
   outputString += 'you ordered ' + ' '+ message.name + '. ' + message.description;
   outputArea.innerHTML = outputString;
 }
+
 
 function hideOrderDialogue(){
   document.getElementById('orderDialogue').style.display = "none";

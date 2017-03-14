@@ -2,32 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Hind|Work+Sans" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/master.css" rel="stylesheet">
     <link href="css/devices.min.css" rel="stylesheet">
     <title>What's Your Starbucks Secret Menu Order?</title>
   </head>
-  <!-- <header>
-    <div class="h1-wrapper">
-    <h1>STARBUCKS COFFEE</h1>
-  </div>
-  </header> -->
   <body>
-    <!-- <photo id="sbuxSiren">
-      <img src="assets/sbux-pngsmall.gif">
-    </photo> -->
-      <!-- <div class="h3-wrapper">
-      <h2>Order Your Secret Menu Drink Now!</h2>
-    </div> -->
-    <!-- <div class="row">
-    <div class="col-12">
-    <div id="how-to">
-      Welcome to the Starbucks Secret Menu. Browse the selection of secret menu items below by clicking on each beverage listed.
-      Once you've decided what you'd like to order fill out the form and we'll build and customize your Secret Menu drink order.
-    </div>
-    </div>
-  </div> -->
   <div class="row">
     <div id="iPhoneUI" class="col-7">
     <div class="marvel-device iphone6 silver">
@@ -39,7 +19,6 @@
     <div class="speaker"></div>
     <div id="screen" class="screen">
           <div class="h1-wrapper">
-          <h1>STARBUCKS COFFEE</h1>
         </div>
         <div id="h2-wrapper">
           <photo id="sbuxSiren">
@@ -54,27 +33,29 @@
           Fill out the form below to place your order and we'll build and customize your Secret Menu drink order.</p>
         </div>
           <form onsubmit="event.preventDefault();return calZodiac();">
-          <p class="form-text"><b>Your First Name</b></p>
+          <p class="form-text">Your First Name</p>
           <p>
             <input id="fname" name="fname" type="text" placeholder="First Name" required>
           </p>
-          <p class="form-text"><b>Your Last Name</b></p>
+          <p class="form-text">Your Last Name</p>
           <p>
             <input id="lname" name="lname" type="text" placeholder="Last Name" required>
           </p>
-          <p class="form-text"><b>Your Birthday</b></p>
+          <p class="form-text">Your Birthday</p>
           <p>
             <input id="bday" name="bday" type="date" required>
           </p>
           <p>
-            <input id="submit" onclick="hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()" type="submit">
+            <input id="submit" onclick="hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()" type="submit" value="Place Your Order">
           </p>
         </form>
       </div>
         <br><div id="receiptHeader">
-        <p>STARBUCKS Store #19104<br>3141 Chestnut Street<br>Philadelphia, PA (215) 895-2000</p><hr>
+        <p>STARBUCKS Store #19104<br>3141 Chestnut Street<br>Philadelphia, PA (215) 895-2000</p>
+        <p>-----------------------------------</p>
           <div id="displayMsg">
           </div>
+          <p>-----------------------------------</p>
           <button id="orderAgain" onclick="resetForm()" type="submit">Order Again</button>
           </div>
     </div>
@@ -86,6 +67,7 @@
     <div id="secret-menu-div">
       <ul class ="secret-menu">
         <h3>The Secret Menu: <br class="menu-break"> Esspresso, Coffee, &amp; More</h3>
+        <!-- <li onclick="click(0)">"Actually, It's a Tall"</li> -->
         <li onclick="showMessage(0), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">"Actually, It's a Tall"</li>
         <li onclick="showMessage(10), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Ariana Grande Mocha Latte</li>
         <li onclick="showMessage(2), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">I Hate Coffee</li>
@@ -100,6 +82,21 @@
         <li onclick="showMessage(1), hideOrderDialogue(), showThankYou(), hideForm(), showReceiptHeader(), showDisplayMsg()">Westphal</li>
       </ul>
     </div>
+    <!-- <script type="text/javascript">
+      fucntion click(num){
+        showMessage(num);
+        commonFunctions();
+        hideOrderDialogue(),
+      }
+      function submtForm(){
+        commonFunctions();
+      }
+
+      function commonFunctions(){
+        showThankYou();
+        hideForm(), showReceiptHeader(), showDisplayMsg();
+      }
+    </script> -->
   </div>
   </div>
 <script src="js/main.js"></script>

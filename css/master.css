@@ -8,8 +8,7 @@
 body{
   color:#1F2021;
   background-color:#007042;
-  font-family: 'Hind', sans-serif;
-  /*font-family: 'PT Sans Narrow', sans-serif;*/
+  font-family: 'Arial', sans-serif;
   font-size: 100%;
 }
 
@@ -68,138 +67,72 @@ body{
     margin-right:22% !important;
   }
 }
+
 #iPhoneUI{
-  padding-top: 3%;
+  padding-top: 1%;
   padding-left: 3%;
 }
+
+#screen {
+  z-index: 100;
+  opacity: 1;
+  transition: 3s opacity;
+}
+
 .h1-wrapper{
   background-color: #007042;
+  height:1rem;
 }
-h1{
-  color: white;
-  display: flex;
-  justify-content: center;
-  font-family:'Work Sans', sans-serif;
-  margin-top: 0;
 
-}
-#sbuxSiren{
-  display: flex;
-  width: 5rem;
-  height: 5rem;
-  margin-left: .25rem;
-  padding:0;
-}
+
 #h2-wrapper{
   display:flex;
   align-content: flex-start;
   text-align:left;
+  margin-top: 1rem;
 }
+
+#sbuxSiren{
+  display: flex;
+  width: 5rem;
+  height: 6rem;
+  margin-left: .25rem;
+  padding:0;
+}
+
 #thankYou{
   display:none;
 }
-#receiptHeader{
-  display:none;
-  color: #1F2021;
-  font-family: monospace;
-}
-#displayMsg{
-  display: none;
-  /*float: right !important;*/
-  /*margin: 20% 50% 0 0;*/
-  text-align: center;
-  padding: 2rem;
-  line-height: 1.5;
-  color:#1F2021;
-  /*width:50%;
-  height: 80%;*/
-  /*background-color: white;*/
-}
+
 #how-to{
   color:#1F2021 !important;
   text-align:center;
-  margin:1rem auto;
+  margin:1rem .5rem 1rem .5rem;
   max-width: 700px;
   color: #1F2021;
   line-height: 1.5;
-}
-img{
-  display:block;
-  justify-content: center;
-  margin:auto;
-  padding: 0;
 }
 
 h2{
   color: #1F2021;
   display: flex;
   flex-wrap: wrap;
-  /*justify-content:;*/
-  font-family:'Work Sans', sans-serif;
-  font-size: 150%;
+  font-family:'Arial', sans-serif;
+  font-size: 175%;
   margin: 2rem 0 0 2rem;
-  /*margin-left:2rem;*/
+  font-weight: normal;
 }
-
-h3{
-  color:white;
-  text-align:center;
-  font-family: 'chalkBoardFont', sans-serif;
-  font-size: 150%;
-  font-weight:lighter;
-}
-
-li:hover{
-text-decoration: underline;
-color: #A4AAAD;
-cursor: pointer;
-}
-#secret-menu-div{
-/*display: block;
-align-content: center;
-align-items: center;
-/*float: left;*/
-margin-top: 20%;
-margin-right: 7%;
-border-style: solid;
-border-color:black;
-border-width: 1rem;
-background-image: url(../assets/Black-Chalkboard-Texture.gif) !important;
-min-width: 20.625rem;
-max-width: 40rem;
-}
-
-.secret-menu{
-  color: white;
-  font-family:'chalkBoardFont', sans-serif;
-  font-weight: 100;
-  list-style: none;
-  justify-content: space-between;
-  margin: auto;
-  padding: 1rem 2rem;
-}
-
-li{
-  line-height:2rem;
-}
-
-@media screen and (min-width:70rem){
-  .menu-break{
-    display:none;
-  }
-}
-
-#screen {
-  z-index: 100;
-}
-
 form{
   color: #1F2021;
 }
 
+.form-text{
+  font-weight: bolder;
+}
+
 input {
     width: 50%;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Arial", sans-serif;
     margin:0;
     border: 3px solid #007042;
 
@@ -220,11 +153,26 @@ input[type=button], input[type=submit], input[type=reset] #submit {
     color: white;
     text-decoration: none;
     cursor: pointer;
-    width: 30%;
+    width: 40%;
 
 }
 input[type=submit]:hover{
   background-color:#003620;
+}
+#receiptHeader{
+  display:none;
+  color: #1F2021;
+  font-family: monospace;
+}
+
+#displayMsg{
+  display: none;
+  text-align: center;
+  padding: 2rem;
+  line-height: 1.5;
+  color:#1F2021;
+  transition: opacity 2s ease-in-out;
+
 }
 
 #orderAgain{
@@ -240,6 +188,46 @@ input[type=submit]:hover{
    background-color:#003620;
   }
 
-footer{
-  margin-top:2rem;
+h3{
+  color:white;
+  text-align:center;
+  font-family: 'chalkBoardFont', sans-serif;
+  font-size: 150%;
+  font-weight:lighter;
+}
+
+li:hover{
+text-decoration: underline;
+color: #A4AAAD;
+cursor: pointer;
+}
+#secret-menu-div{
+margin-top: 20%;
+margin-right: 7%;
+border-style: solid;
+border-color:black;
+border-width: 1rem;
+background-image: url(../assets/Black-Chalkboard-Texture.gif) !important;
+min-width: 20.625rem;
+max-width: 40rem;
+}
+
+.secret-menu{
+  color: white;
+  font-family:'chalkBoardFont', sans-serif;
+  font-weight: 100;
+  list-style: none;
+  justify-content: space-between;
+  margin: auto;
+  padding: 4rem 4rem;
+}
+
+li{
+  line-height:2rem;
+}
+
+@media screen and (min-width:70rem){
+  .menu-break{
+    display:none;
+  }
 }
