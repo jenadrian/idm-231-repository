@@ -108,12 +108,17 @@ function resetForm()  {
   window.location.reload();
 }
 
+function playAudio(receiptPrint){
+  document.getElementById(receiptPrint).play();
+}
+
 function updateUi() {
   hideOrderDialogue();
   showThankYou()
   hideForm();
   showReceiptHeader();
   showDisplayMsg();
+  playAudio(receiptPrint);
 }
 
 function updateUiMessage(index) {
