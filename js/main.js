@@ -108,8 +108,10 @@ function resetForm()  {
   window.location.reload();
 }
 
-function playAudio(receiptPrint){
-  document.getElementById(receiptPrint).play();
+function playAudio(audioEl){
+  document.getElementById(audioEl).currentTime = 0;
+  document.getElementById(audioEl).play();
+
 }
 
 function updateUi() {
@@ -118,7 +120,7 @@ function updateUi() {
   hideForm();
   showReceiptHeader();
   showDisplayMsg();
-  playAudio(receiptPrint);
+  playAudio('receiptPrint');
 }
 
 function updateUiMessage(index) {
