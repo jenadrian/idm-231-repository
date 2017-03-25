@@ -1,9 +1,10 @@
 var firstName;
 var lastName;
 var birthDay0bj;
-var age
-var currentDate
-
+var age;
+var currentDate;
+var secretMenu = document.getElementById('secret-menu-div');
+var lastClass = 'secret-menu-default';
 
 var WeekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
@@ -75,6 +76,12 @@ function getMessageIndex(month, day) {
   }
 }
 
+function changeChalkboard(index) {
+  secretMenu.classList.remove(lastClass);
+  lastClass = 'secret-menu-' + index;
+  secretMenu.classList.add(lastClass);
+}
+
 function showMessage(index, name) {
   var outputArea = document.getElementById('displayMsg');
   var message = messages[index];
@@ -84,6 +91,8 @@ function showMessage(index, name) {
   }
   outputString += 'you ordered ' + ' '+ message.name + '. ' + message.description;
   outputArea.innerHTML = outputString;
+  changeChalkboard(index);
+  currentIndex = index;
 }
 
 function hideOrderDialogue(){
@@ -103,6 +112,12 @@ function showReceiptHeader(){
 function showDisplayMsg(){
     document.getElementById('displayMsg','receiptHeader').style.display = "block";
 }
+
+// function showDisplayMsg(){
+//     document.getElementById('displayMsg','receiptHeader').style.display = "block";
+// }
+
+// think about adding visible and hidden classes
 
 function resetForm()  {
   window.location.reload();

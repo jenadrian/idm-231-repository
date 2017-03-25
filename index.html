@@ -10,7 +10,7 @@
   </head>
   <body>
   <div class="row">
-    <div id="iPhoneUI" class="col-7">
+    <div id="iPhoneUI" class="col-5">
     <div class="marvel-device iphone6 silver">
     <div class="top-bar"></div>
     <div class="sleep"></div>
@@ -33,22 +33,20 @@
           <br><p> Welcome to the Starbucks Secret Menu. Browse the selection of secret menu items by clicking on each beverage.
           Fill out the form below to place your order and we'll build and customize your Secret Menu drink order.</p>
         </div>
-          <form onsubmit="event.preventDefault();return calZodiac();">
-          <p class="form-text">Your First Name</p>
-          <p>
-            <input id="fname" name="fname" type="text" placeholder="First Name" required>
-          </p>
-          <p class="form-text">Your Last Name</p>
-          <p>
-            <input id="lname" name="lname" type="text" placeholder="Last Name" required>
-          </p>
-          <p class="form-text">Your Birthday</p>
-          <p>
-            <input id="bday" name="bday" type="date" required>
-          </p>
-          <p>
-            <input id="submit" onclick="updateUi()" type="submit" value="Place Your Order">
-          </p>
+        <form onsubmit="event.preventDefault();return calZodiac();">
+          <label>
+            <input id="fname" name="fname" type="text" required />
+            <div class="form-text">First Name</div>
+          </label>
+          <label>
+            <input id="lname" name="lname" type="text" required />
+            <div class="form-text">Last Name</div>
+          </label>
+          <label id="birthDay">
+            <input id="bday" name="bday" type="date" required />
+            <div class="form-text">Birthday</div>
+          </label>
+          <input id="submit" onclick="updateUi()" type="submit" value="Place Your Order">
         </form>
       </div>
         <br><div id="receiptHeader">
@@ -56,7 +54,7 @@
         <p>-----------------------------------</p>
           <div id="displayMsg">
           </div>
-          <p>-----------------------------------</p>
+        <p>-----------------------------------</p>
           <button id="orderAgain" onclick="resetForm()"  type="submit">Order Again</button>
           </div>
     </div>
@@ -64,8 +62,8 @@
   <div class="bottom-bar"></div>
       </div>
     </div>
-    <div class="col-5">
-    <div id="secret-menu-div">
+    <div class="col-7">
+    <div id="secret-menu-div" class="secret-menu-default">
       <ul class ="secret-menu">
         <h3>The Secret Menu: <br class="menu-break"> Esspresso, Coffee, &amp; More</h3>
         <!-- <li onclick="click(0)">"Actually, It's a Tall"</li> -->
@@ -82,10 +80,12 @@
         <li onclick="updateUiMessage(11)">Vegan [When it's Trending]</li>
         <li onclick="updateUiMessage(1)">Westphal</li>
       </ul>
+      <div class="blank-menu" alt="blank div">
+    </div>
     </div>
   </div>
   </div>
-  <audio id ="receiptPrint" src="assets/receiptPrint.m4a">
+  <audio id ="receiptPrint" src="assets/ding.m4a">
     Sorry, your browser does not support HTML 5 audio.
   </audio>
 <script src="js/main.js"></script>
