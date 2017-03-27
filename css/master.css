@@ -127,43 +127,6 @@ h2{
   margin: 2rem 0 0 2rem;
   font-weight: normal;
 }
-/*form{
-  color: #1F2021;
-}
-
-.form-text{
-  font-weight: bolder;
-}
-
-input {
-    width: 50%;
-    font-family: "Arial", sans-serif;
-    margin:0;
-    border: 3px solid #007042;
-
-}
-
-input[type=text]:focus {
-    border: 3px solid #00C977;
-}
-
-input[type=date]:focus{
-border: 3px solid #00C977;
-}
-
-input[type=button], input[type=submit], input[type=reset] #submit {
-    background-color: #007042;
-    border: none;
-    border-radius: .625rem;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    width: 40%;
-
-}
-input[type=submit]:hover{
-  background-color:#003620;
-}*/
 
 form {
   text-align: center;
